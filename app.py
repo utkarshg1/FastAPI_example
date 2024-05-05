@@ -31,7 +31,7 @@ def predict_species(data:IrisData):
     probs = model.predict_proba(xnew_pre)
     print(pred, probs, model.classes_)
     return {
-        'species':pred
+        'species':pred[0]
     }
 
 if __name__ == '__main__':
